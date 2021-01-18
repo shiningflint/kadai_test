@@ -11,6 +11,10 @@
 ### Run Tests
 - run `yarn run jest`
 
-### Kadai 2
+### 課題2
 - go to folder `src/kadai2`
+- run `node main.js`
+
+### 課題3
+- go to folder `src/kadai3`
 - run `node main.js`
