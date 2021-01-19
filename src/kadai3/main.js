@@ -11,7 +11,6 @@ const kadai = (s, t) => {
   for (let s of result) {
     console.log(s)
   }
-  console.log("\n")
 }
 
 const main = () => {

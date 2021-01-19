@@ -7,16 +7,14 @@ class Performance {
 
   start = () => {
     this.memoryUsageStart = process.memoryUsage()
-    this.timeStart = process.hrtime()
+    console.time("process")
   }
 
   logElapsedPerformance = (note) => {
-    const precision = 3 // 3 decimal places
-    const elapsed = process.hrtime(this.timeStart)[1] / 1000000 // divide by a million to get nano to milli
-    console.log(note + elapsed.toFixed(precision) + " ms")
+    console.log("\n")
+    console.timeEnd("process")
     this.memoryUsageEnd = process.memoryUsage()
     this._printMemoryDifference()
-    this.timeStart = process.hrtime() // reset the timer
   }
 
   // private
