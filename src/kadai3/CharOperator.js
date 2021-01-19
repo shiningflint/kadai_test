@@ -7,8 +7,8 @@ class CharOperator {
   run = (s, t) => {
     this._resetValues()
 
-    const listS = s.split('')
-    const listT = t.split('')
+    const listS = s.split("")
+    const listT = t.split("")
 
     if (listS.length > listT.length) {
       this._processValuesInverse(listS, listT)
